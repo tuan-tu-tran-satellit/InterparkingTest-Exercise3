@@ -8,7 +8,12 @@ namespace InterParkingTestFileReadinLib
 {
     public class XmlContentReader
     {
-        readonly FileReader _reader = new FileReader();
+        readonly IFileReader _reader;
+
+        public XmlContentReader(IFileReader reader = null)
+        {
+            _reader = reader ?? new FileReader();
+        }
 
         public string ReadFileContent(string path)
         {
