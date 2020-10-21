@@ -2,8 +2,6 @@
 
 namespace Tests
 {
-    public partial class XmlContentReaderTest
-    {
         class FakeReader : IFileReader
         {
             public string Content = "";
@@ -12,5 +10,4 @@ namespace Tests
                 return Content;
             }
         }
-    }
 }
