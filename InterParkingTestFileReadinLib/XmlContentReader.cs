@@ -6,6 +6,9 @@ using System.Xml.Linq;
 
 namespace InterParkingTestFileReadinLib
 {
+    /// <summary>
+    /// A class that can read and validate xml content
+    /// </summary>
     public class XmlContentReader
     {
         readonly IFileReader _reader;
