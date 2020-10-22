@@ -8,7 +8,7 @@ namespace InterParkingTestFileReadinLib
     /// <summary>
     /// A file reader that consults a security context before reading a file (using another file reader).
     /// </summary>
-    public class RestrictedFileReader
+    public class RestrictedFileReader : IFileReader
     {
         private readonly IFileReader _fileReader;
         private readonly ISecurityContext _securityContext;
