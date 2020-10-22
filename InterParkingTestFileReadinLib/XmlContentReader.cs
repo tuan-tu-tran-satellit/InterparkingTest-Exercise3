@@ -9,7 +9,7 @@ namespace InterParkingTestFileReadinLib
     /// <summary>
     /// A class that can read and validate xml content
     /// </summary>
-    public class XmlContentReader
+    public class XmlContentReader : IFileReader
     {
         readonly IFileReader _reader;
 
