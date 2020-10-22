@@ -5,7 +5,7 @@ using System.Text;
 
 namespace InterParkingTestFileReadinLib
 {
-    public class EncryptedFileReader
+    public class EncryptedFileReader : IFileReader
     {
         private readonly Func<string, string> _algorithm;
         private readonly IFileReader _fileReader;
